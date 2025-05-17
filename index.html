@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html lang="zh">  
+<head>
+    <meta charset="utf-8">
+    <title>读书实践笔记</title>
+    <style type="text/css">
+img{
+    border: 1px rgb(19, 17, 17) dashed;
+    margin:10px 10px 0px;
+    padding:4px;
+    float:right;
+    width:240px;
+    height:200px;
+}
+
+#colframe{
+    width:300px;
+    margin:0 auto;
+    height:30px;
+    border:4px solid #fcfafa;
+    background-color: #88b048;
+    text-align:center;
+}
+#colframe span.title{
+    float:center;
+    padding:16px;
+}
+#nav {
+    font-size:14px;
+}
+#nav a{
+    color:rgb(239, 32, 17);
+    background-color: rgb(154, 184, 229);
+    text-align:center;
+    text-decoration: none;
+    display:block;
+    padding: 18px 48px 10px;
+    margin:0 2px;
+    border:1px solid #b04848;
+    float:left;
+}
+#nav a:hover{
+    color:beige;
+    background-color: blue;
+}
+a.tip span{
+    display:none;
+}
+a.tip :hover{
+    cursor:hand;
+    z-index:999;
+}
+a.tip:hover .popbox{
+    display:block;
+    position: absolute;
+    width: 100px;
+    background-color: burlywood;
+    color: cornflowerblue;
+    padding: 10px;
+    z-index: 9999;
+}
+p{
+    font-size: 14px;
+}
+    </style>
+</head>  
+<body>
+    <h2 id="colframe">
+    <span class="title">读书实践笔记</span>
+    </h2>
+    </body>
+        <p>
+            GitHub作为当今最流行的代码托管平台，其学习使用过程让我收获颇丰。首先需要理解GitHub是基于Git的云端服务平台，它不仅提供代码存储功能，更重要的是搭建了一个完整的开发者协作生态。注册账号后，我通过创建第一个仓库开始了实践之旅，发现5GB的免费存储空间完全能满足个人项目的需求，而无限量的私有仓库创建权限更是大大提升了实用性。
+在实际操作中，我逐步掌握了GitHub的核心功能。创建仓库时勾选初始化README文件的选项能快速建立项目结构，通过简单的拖拽就能上传多个文件，配合.gitignore模板的使用，让版本控制变得更加高效。Git命令的学习曲线虽然陡峭，但掌握了clone、add、commit、push等基础命令后，已经能够完成日常的代码管理任务。特别值得注意的是，清晰的提交信息规范能极大提升后期维护效率，这是我在实践中得到的宝贵经验。
+团队协作功能的学习让我眼界大开。Pull Request机制的精妙设计让代码审查变得规范而高效，从创建PR到代码审查，再到最终合并，整个流程清晰可控。通过参与开源项目，我学会了如何fork仓库、创建特性分支、提交PR，并配合Issues系统进行问题追踪。在这个过程中，合理使用标签分类和里程碑管理，能让项目进度一目了然。我还发现，GitHub提供的快捷键和在线编辑器大大提升了工作效率，比如按"t"键快速搜索文件，或者用"."键直接进入在线VS Code环境。
+安全实践是GitHub使用中不可忽视的重要环节。启用双重验证、定期检查安全日志、使用SSH密钥替代密码等做法，都是保护代码资产的基本要求。随着使用的深入，GitHub Actions的自动化能力让我印象深刻，从简单的自动构建到复杂的部署流程，都能通过配置文件实现，这为DevOps实践提供了强大支持。通过这次学习，我认识到GitHub不仅仅是代码仓库，更是一个完整的开发生态系统，值得持续深入探索。
+        </p>
+        <p>
+            GitHub不仅提供了代码托管服务，更是开发者协作的重要平台。通过实践，我体会到版本控制对项目管理的重要性，以及开源社区的价值。下一步将学习Pull Request和Issues等协作功能。
+        </p>
+    <div id="nav">
+    <a href="#"class='tip'>创建仓库<span class="popbox">点击"New repository"按钮，填写仓库名称、描述，选择Public(公开)选项，可选择添加README文件初始化仓库</span></a>
+    <a href="#"class='tip'>本地连接<span class="popbox">使用git remote add origin [仓库URL]命令连接本地与远程仓库，通过git push -u origin main推送代码</span></a>
+    <a href="#"class='tip'>学习来源<span class="popbox">小红书，B站等</span></a>
+</div>
+</body>
+</html>

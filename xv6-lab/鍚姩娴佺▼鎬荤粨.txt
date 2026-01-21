@@ -1,0 +1,14 @@
+xv6启动流程总结
+================
+
+一、启动链路
+BIOS → bootblock → bootasm.S → bootmain.c → entry.S → main()
+
+二、各阶段功能
+1. bootasm.S: 实模式切换到保护模式，启用A20地址线
+2. bootmain.c: 加载ELF格式的内核到内存
+3. entry.S: 内核入口点，设置栈并调用main()
+4. main.c: 内核初始化开始
+
+三、学习收获
+理解了操作系统从硬件上电到内核初始化的完整过程。
